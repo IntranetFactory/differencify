@@ -230,13 +230,9 @@ export default class Target {
       resultCallback = callback;
     }
     if (this.testConfig.isJest && !this.testConfig.testNameProvided) {
-      this.testConfig.testName = this.testId
-        ? `${this.testStats.currentTestName} ${this.testId}`
-        : this.testStats.currentTestName;
+      this.testConfig.testName = this.testStats.currentTestName;
     } else {
-      this.testConfig.testName = this.testId
-        ? `${this.testConfig.testName} ${this.testId}`
-        : this.testConfig.testName;
+      this.testConfig.testName = this.testConfig.testName;
     }
     this.testId += 1;
     const result = await this._evaluateResult();
