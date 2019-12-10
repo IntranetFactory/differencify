@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/helpers/moduleList.js"],"names":["module","exports"],"mappings":";;AAAAA,OAAOC,OAAP,GAAiB,CACf,MADe,EAEf,UAFe,EAGf,OAHe,EAIf,aAJe,EAKf,SALe,CAAjB","file":"moduleList.js","sourcesContent":["module.exports = [\r\n  'page',\r\n  'keyboard',\r\n  'mouse',\r\n  'touchscreen',\r\n  'tracing',\r\n];\r\n"]}
