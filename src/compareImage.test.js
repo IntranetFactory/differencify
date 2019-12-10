@@ -177,7 +177,7 @@ describe('Compare Image', () => {
     fs.existsSync.mockReturnValueOnce(true);
 
     const config = {
-      ...mockConfig,
+      mockConfig,
       mismatchThreshold: 0,
     };
     const result = await compareImage(Object, config, mockTestConfig);
